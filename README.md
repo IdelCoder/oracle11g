@@ -24,7 +24,10 @@ If succeeding, you will see this new image.
 ```sh
 docker images
 ```
-
+Note that if you run build in linux, some files may need to be converted to unix format, i.e.
+```
+dos2unix oracle11g/assets/*
+```
 ## get oracle database packages
 
 Download database installation files from [Oracle site](http://www.oracle.com/technetwork/database/in-memory/downloads/index.html) and unpack them to **install_folder**. For instance, unpacking oracle packages gives you _/home/oracle/install/database_. Then __install_folder__ should be _/home/oracle/install/_ .
